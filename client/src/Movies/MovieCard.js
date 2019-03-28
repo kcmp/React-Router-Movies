@@ -11,18 +11,19 @@ function MovieCard({ movie }) {
       </Link>
 
       <div className="movie-director">
-        Director: <em>{director}</em>
-      </div>
-      <div className="movie-metascore">
-        Metascore: <strong>{metascore}</strong>
-      </div>
-      <h3>Actors</h3>
+            Director: <em>{director}</em>
+          </div>
+          <div className="movie-metascore">
+            Metascore: <strong>{metascore}</strong>
+          </div>
+          <h3>Actors</h3>
 
-      {stars.map(star => (
-        <div key={star} className="movie-star">
-          {star}
-        </div>
-      ))}
+          {stars.map(star => (
+            <div key={star} className="movie-star">
+              {star}
+            </div>
+          ))}      
+        <div className="save-button">Save</div>
       </div>
   );
 }
